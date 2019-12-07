@@ -8,7 +8,7 @@ class ListAppointments extends Component {
              <div>{item.ownerName}</div>
              </div>
           ) );
-        return <div>{listItems} </div>
+        return <div>{listItems} </div>;
     }
 }
 
