@@ -29,6 +29,7 @@ class SearchAppointments extends Component {
                     "sort-by dropdown-item " +
                     (this.props.orderBy === "petName" ? "active" : "")
                   }
+                  onClick = {e => this.props.changeOrder('petName', this.props.orderDir)}
                   href="#"
                 >
                   Tiername
@@ -38,6 +39,7 @@ class SearchAppointments extends Component {
                     "sort-by dropdown-item " +
                     (this.props.orderBy === "aptDate" ? "active" : "")
                   }
+                  onClick = {e => this.props.changeOrder('aptDate', this.props.orderDir)}
                   href="#"
                 >
                   Datum
@@ -47,6 +49,7 @@ class SearchAppointments extends Component {
                     "sort-by dropdown-item " +
                     (this.props.orderBy === "ownerName" ? "active" : "")
                   }
+                  onClick = {e => this.props.changeOrder('ownerName', this.props.orderDir)}
                   href="#"
                 >
                   Besitzer
@@ -57,6 +60,7 @@ class SearchAppointments extends Component {
                     "sort-by dropdown-item " +
                     (this.props.orderDir === "asc" ? "active" : "")
                   }
+                  onClick = {e => this.props.changeOrder(this.props.orderBy, 'asc')}
                   href="#"
                 >
                   aufsteigend
@@ -66,6 +70,7 @@ class SearchAppointments extends Component {
                     "sort-by dropdown-item " +
                     (this.props.orderDir === "desc" ? "active" : "")
                   }
+                  onClick = {e => this.props.changeOrder(this.props.orderBy, 'desc')}
                   href="#"
                 >
                   absteigend
